@@ -1,0 +1,12 @@
+.menu-bar{
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.menu-bar > ul{
+    width: min-content;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}

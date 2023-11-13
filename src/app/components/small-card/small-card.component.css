@@ -1,0 +1,13 @@
+.small-card{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    padding: .5rem 0;
+    align-items: center;
+}
+.small-card__photo > img{
+    width: 100%;
+}
+.small-card__title > h1 {
+    font-size: 1rem;
+}

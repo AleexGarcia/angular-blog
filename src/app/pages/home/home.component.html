@@ -2,28 +2,20 @@
 <div class="articles">
   <div class="articles__main">
     <app-big-card
-      id="1"
-      cardTitle="Novo Homem de ferro"
-      cardDescription="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam aperiam ipsum nisi, obcaecati impedit vitae culpa! Est tenetur exercitationem illo eum, itaque delectus dolor sint error distinctio commodi deserunt expedita"
-      photoCover="https://proxy.olhardigital.com.br/wp-content/uploads/2023/05/Homem-de-Ferro-voando-768x432.jpg"
+      id="{{ featuredArticle?.id }}"
+      cardTitle="{{ featuredArticle?.title }}"
+      cardDescription="{{ featuredArticle?.description }}"
+      photoCover="{{featuredArticle?.photo}}"
       >.</app-big-card
     >
   </div>
   <div class="articles__others">
+    <h1>Projetos</h1>
     <app-small-card
-      id="2"
-      cardTitle="Nova serie da Disney plus"
-      photoCover="https://media.gettyimages.com/id/1163406336/pt/foto/a-disney-streaming-service-sign-is-pictured-at-the-d23-expo-billed-as-the-largest-disney-fan.jpg?s=612x612&w=0&k=20&c=Y_oHd3Som5XPj43S7EibJgYbfxSOzWXzZ3mfqTx6Ne0="
-    ></app-small-card>
-    <app-small-card
-      id="3"
-      cardTitle="Nova serie da Disney plus"
-      photoCover="https://media.gettyimages.com/id/1163406336/pt/foto/a-disney-streaming-service-sign-is-pictured-at-the-d23-expo-billed-as-the-largest-disney-fan.jpg?s=612x612&w=0&k=20&c=Y_oHd3Som5XPj43S7EibJgYbfxSOzWXzZ3mfqTx6Ne0="
-    ></app-small-card>
-    <app-small-card
-      id="4"
-      cardTitle="Nova serie da Disney plus"
-      photoCover="https://media.gettyimages.com/id/1163406336/pt/foto/a-disney-streaming-service-sign-is-pictured-at-the-d23-expo-billed-as-the-largest-disney-fan.jpg?s=612x612&w=0&k=20&c=Y_oHd3Som5XPj43S7EibJgYbfxSOzWXzZ3mfqTx6Ne0="
+      *ngFor="let article of otherArticles"
+      id="{{ article.id }}"
+      photoCover="{{ article.photo }}"
+      cardTitle="{{ article.title }}"
     ></app-small-card>
   </div>
 </div>

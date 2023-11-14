@@ -9,6 +9,7 @@ import {dataFake} from '../../data/dataFake';
 export class ContentComponent implements OnInit {
   photoCover: string = '';
   contentTitle: string = '';
+  contentRepository: string = '';
   contentDescription: string = '';
   private id: string | null = '0';
   constructor(private route: ActivatedRoute) {}
@@ -25,6 +26,7 @@ export class ContentComponent implements OnInit {
       this.contentTitle = result.title;
       this.photoCover = result.photo;
       this.contentDescription = result.description;
+      this.contentRepository = result.repository;
     } 
   }
 }

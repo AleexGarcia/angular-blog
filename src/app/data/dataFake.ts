@@ -20,7 +20,7 @@ export const dataFake = [
     "photo": '/assets/images/easy-bank.png',
     "title": 'EasyBank - landing page',
     "description":
-      'Challenge Front end mentor - Landing Page de EasyBank - Desenvolv"id"a com React, TypeScript, Styled-components',
+      'Challenge Front end mentor - Landing Page de EasyBank - Desenvolvida com React, TypeScript, Styled-components',
     "repository": 'https://github.com/AleexGarcia/styled-componets-landing-page',
   },
   {
